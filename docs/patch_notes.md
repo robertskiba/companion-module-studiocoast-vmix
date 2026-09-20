@@ -12,6 +12,7 @@
 - Fixed Overlay 2-8, Replay Channel B Camera, Transition 2-4 Duration, and Bus B-G Send to Master presets controlling or displaying the wrong target
 - Fixed Audio Preset input filter using the bus filter text
 - Fixed `mix_selected_*_layer_*` position variables never updating
+- Fixed a Video Call input without an audio source aborting the update of all variables
 
 **v5.0.5**
 - Fixed an issue with an internal upgrade script not appropriately handling the upgrade of `Overlay - Functions` actions from very old configs

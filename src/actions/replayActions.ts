@@ -229,11 +229,7 @@ export type ReplayActionsSchema = {
   }>
   replaySetTimecode: CompanionActionSchema<{
     functionID:
-      | 'ReplaySetTimecode'
-      | 'ReplaySetChannelAToBTimecode'
-      | 'ReplaySetChannelAToBTimecodeAndCamera'
-      | 'ReplaySetChannelBToATimecode'
-      | 'ReplaySetChannelBToATimecodeAndCamera'
+      'ReplaySetTimecode' | 'ReplaySetChannelAToBTimecode' | 'ReplaySetChannelAToBTimecodeAndCamera' | 'ReplaySetChannelBToATimecode' | 'ReplaySetChannelBToATimecodeAndCamera'
     channel: ReplayChannel
     value: string
   }>

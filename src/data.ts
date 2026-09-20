@@ -385,11 +385,6 @@ export class VMixData {
    */
   public getAudioLevelData(level: AudioLevel): AudioLevelData {
     const now = Math.floor(new Date().getTime() / 1000)
-    let s1 = 1000 / this.instance.config.apiPollInterval
-    let s3 = s1 * 3
-
-    if (s1 < 1) s1 = 1
-    if (s3 < 1) s3 = 1
 
     const s1ArrF1 = level.meterF1.filter((level) => Math.floor(level.time.getTime() / 1000) === now - 1).map((level) => level.value)
     const s1ArrF2 = level.meterF2.filter((level) => Math.floor(level.time.getTime() / 1000) === now - 1).map((level) => level.value)
